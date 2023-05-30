@@ -1,0 +1,17 @@
+[package]
+name = "rust-python-lib-template"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust_python_lib_template"
+crate-type = ["cdylib", "lib"]
+
+[[bin]]
+name = "rust-python-lib-template-example"
+path = "./src/bin/example"
+
+
+[dependencies]
+pyo3 = "0.18.3"
