@@ -1,16 +1,7 @@
-use pyo3::prelude::*;
+mod calculator;
 mod py;
-pub struct Calculator {}
-
-impl Calculator {
-    pub fn new() -> Self {
-        Calculator {}
-    }
-
-    pub fn sum(&self, a: usize, b: usize) -> usize {
-        a + b
-    }
-}
+pub use calculator::*;
+use pyo3::prelude::*;
 
 #[pymodule]
 fn rust_python_lib_template(py: Python, m: &PyModule) -> PyResult<()> {
