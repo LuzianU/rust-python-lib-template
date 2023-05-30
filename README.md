@@ -1,6 +1,6 @@
 # Library Template for Python and Rust
 
-This is a template repository for creating a library that can be used in both Python and Rust projects.
+This is a template repository for creating a library using Maturin and PyO3 that can be used in both Python and Rust projects.
 
 ## Getting Started
 
