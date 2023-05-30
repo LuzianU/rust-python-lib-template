@@ -19,7 +19,14 @@ Initialize the Rust bindings using Maturin (pyo3):
 maturin init
 ```
 
-Create a new Git tag for your release version:
+Install the library into your virtual environment (make sure .env is activated)
+```properties
+maturin develop
+```
+
+You can now use the library in both Rust or Python (make sure .env is activated)
+
+To automatically create a GitHub release including cross-compiled binaries, create a new Git tag for your release version:
 ```properties
 git tag vX.X.X
 git push origin vX.X.X
